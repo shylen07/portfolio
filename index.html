@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Home</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-dapHt+MUsHkTrZmyeCD/6bJi6agzOL9/ycCqU1WvF+Gczw7u/HGdnLH/dWQOv0wkhRdZPc3TGH/Z7ps5hcA0gw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav id="nav-bar" class="sticky">
+      <ul class="logo">
+        <img src="./images/logo.png" alt="Logo" />
+      </ul>
+      <ul class="menu-center">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+      <ul class="icons">
+        <a href="https://www.linkedin.com/in/devender-singh-75976717b/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://github.com/shylen07" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+       
+      </ul>
+      <li class="hamburger-menu" ><ion-icon name="menu-outline"></ion-icon></li>
+    </nav>
+
+    <section id="home">
+      <div class="container-home">
+      
+        <h1>Hi, I'm Devender Singh</h1>
+        <div class="skill">
+          <span class="text first-text">I'm a <br> </span>
+          <span class="text second-text"> </span>
+        </div>
+        <div id="button">Resume</div>
+      </div>
+      <h2 >Technologies I Learned</h2>
+      <nav class="bottom-nav">
+        <ul class="icon-center">
+          <li><ion-icon name="logo-html5"></ion-icon></li>
+          <li><ion-icon name="logo-css3"></ion-icon></li>
+          <li><ion-icon name="logo-nodejs"></ion-icon></li>
+          <li><ion-icon name="logo-react"></ion-icon></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="about">
+        <div class="section-title">
+          <h2>About</h2>
+          <h2>I'm Devender Singh</h2>
+          <p>A passionate web developer. I specialize in creating responsive and user-friendly websites that deliver exceptional user experiences. With a strong background in HTML, CSS, JavaScript , I have successfully designed and developed numerous websites. I am a strong believer in clean code, modular architecture, and best practices. I take pride in writing efficient, scalable, and maintainable code that adheres to industry standards. I am detail-oriented, organized, and always strive for perfection in my work.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-title">
+        <h2>Skills</h2>
+      </div>
+      <div class="skills_container">
+        <div><img src="https://chiranjeev-thapliyal.vercel.app/svg/html-5.svg" alt=""></a></div>
+        <div><img src="https://chiranjeev-thapliyal.vercel.app/svg/css3.svg" alt=""></a></div>
+        <div><img src="https://chiranjeev-thapliyal.vercel.app/svg/javascript.svg" alt=""></a></div>
+        <div><img src="https://chiranjeev-thapliyal.vercel.app/svg/reactjs.svg" alt=""></a></div>
+        <div><img src="https://chiranjeev-thapliyal.vercel.app/svg/redux.svg" alt=""></a></div>
+        <div><img src="https://chiranjeev-thapliyal.vercel.app/svg/nodejs.svg" alt=""></a></div>
+        <div><img src="https://chiranjeev-thapliyal.vercel.app/svg/mongodb.svg" alt=""></a></div>
+        <div><img src="https://chiranjeev-thapliyal.vercel.app/svg/git.svg" alt=""></a></div>
+      </div>
+
+    </section>
+    
+    <section id="projects">
+      <div class="section-title">
+        <h2>Projects</h2>
+      </div>
+
+      <div class="project-container">
+          <div class="project-card">
+              <img class="project-image" src="/images/project_1.png" alt="Project One Image"/>
+              <h3>Unit Converter</h3>
+              
+              <hr/>
+              <p class="subtext"><a class="project-link" href="https://unit-converter-1.netlify.app/">View here</a></p>
+          </div>
+          <div class="project-card">
+            <img class="project-image" src="/images/project_2.png" alt="Project One Image"/>
+            <h3>Weather App</h3>
+            
+            <hr/>
+            <p class="subtext"><a class="project-link" href="https://weather-app-1-1.netlify.app/">View here</a></p>
+          </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-title">
+        <h2>Contact Me</h2>
+
+        <div class="contact-form">
+          <form onsubmit="showPopup()">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+              <button id="btn" type="submit">Submit</button>
+            </div>
+          </form>
+        </div>
+
+    </section>
+
+    <script src="./index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  </body>
+</html>
